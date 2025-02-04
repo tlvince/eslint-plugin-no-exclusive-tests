@@ -28,7 +28,7 @@ module.exports = {
   },
   configs: {
     recommended: {
-      rules: {
+      rules: /** @type {const} */ ({
         'jasmine/expect-matcher': 1,
         'jasmine/expect-single-argument': 1,
         'jasmine/named-spy': 0,
@@ -51,7 +51,7 @@ module.exports = {
         'jasmine/prefer-promise-strategies': 1,
         'jasmine/prefer-toHaveBeenCalledWith': 1,
         'jasmine/prefer-toBeUndefined': 0
-      }
+      })
     }
   }
 }
